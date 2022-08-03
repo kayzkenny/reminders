@@ -15,7 +15,10 @@ class MyApp extends ConsumerWidget {
       routerDelegate: goRouter.routerDelegate,
       debugShowCheckedModeBanner: false,
       restorationScopeId: 'app',
-      // theme: lightTheme,
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.black,
+        appBarTheme: const AppBarTheme(color: Colors.black),
+      ),
     );
   }
 }
